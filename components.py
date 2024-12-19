@@ -107,3 +107,71 @@ data.append(new)
 # print(PhoneChcker("+9876543123"))
 # print(PhoneChcker("+aaa"))
 # print(PhoneChcker("asxdcfvgbhnjm"))
+
+
+
+
+
+
+#************ if ichidagi "in" logikasi 
+
+# def SearchByName(data):
+#   while True:
+#     print(" #. Orqaga ")
+#     item = input("Ism kiriting: ")
+#     for i in range(len(data)):
+#       name = data[i]["name"]
+#       if item == name:
+#         print(f"\n\
+#             {data[i]["name"]}:\n\
+#                 Tel. raqami: {data[i]["phone"]}\n\
+#                 Email manzil: {data[i]["email"]}\n\
+#                 Manzil: {data[i]["address"]}\n\
+#                   ")
+#         break
+#       j = 0
+#       while j < len(name):
+#         if j >= len(item):
+#           break
+#         if item[j] == name[j]:
+#           k = 0
+#           b = False
+#           while k < len(item):
+#             if item[k] == name[k]:
+#               b = True
+#             else:
+#               b = False
+#             k += 1
+#           if b:
+#             print(f"\n\
+#             {data[i]["name"]}:\n\
+#                 Tel. raqami: {data[i]["phone"]}\n\
+#                 Email manzil: {data[i]["email"]}\n\
+#                 Manzil: {data[i]["address"]}\n\
+#                   ")
+#           break
+#         j += 1
+#     if item == "#":
+#       SearchContact(data)
+#       break    
+
+
+
+# Search with 'in' into "if"
+
+# def SearchByNumberStandart(data):
+#   while True:
+#     print(" #. Orqaga ")
+#     item = input("Raqam kiriting: ")
+#     for i in range(len(data)):
+#       phone = data[i]["phone"]
+#       if item == phone:
+#         print(f"\n\
+#             {data[i]["name"]}:\n\
+#                 Tel. raqami: {data[i]["phone"]}\n\
+#                 Email manzil: {data[i]["email"]}\n\
+#                 Manzil: {data[i]["address"]}\n\
+#                   ")
+#         break
+#       if item in phone:
+#         print(data[i])  
