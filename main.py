@@ -188,7 +188,7 @@ def DelContact(data):
     counter += 1
     name = data[i]["name"]
     print(f"          {i + 1}. {name}")
-  choice = int(input(f"Kimni ochirmoqchisiz (0-...{counter}): "))
+  choice = int(input(f"Kimni ochirmoqchisiz (0-{counter}): "))
   for i in range(len(data)):
     name = data[i]["name"]
     if data[choice - 1] == data[i]:
@@ -203,7 +203,7 @@ def DelContact(data):
 def SearchByName(data):
   while True:
     print(" #. Orqaga ")
-    item = input("Ism kiriting: ")
+    item = input(" Ism kiriting: ")
     for i in range(len(data)):
       name = data[i]["name"]
       if item == name:
@@ -264,7 +264,7 @@ def SearchByLastNumber(data):
 def SearchByNumberStandart(data):
   while True:
     print(" #. Orqaga ")
-    item = input("Raqam kiriting: ")
+    item = input(" Raqam kiriting: ")
     for i in range(len(data)):
       phone = data[i]["phone"]
       if item == phone:
@@ -276,7 +276,12 @@ def SearchByNumberStandart(data):
                   ")
         break
       if item in phone:
-        print(data[i])  
+        print(f"\n\
+            {data[i]["name"]}:\n\
+                Tel. raqami: {data[i]["phone"]}\n\
+                Email manzil: {data[i]["email"]}\n\
+                Manzil: {data[i]["address"]}\n\
+                  ")  
         
     #   j = 0
     #   while j <= len(phone):
